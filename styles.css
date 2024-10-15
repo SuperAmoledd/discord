@@ -14,20 +14,37 @@ header {
 }
 
 main {
-    padding: 40px;
+    padding: 20px;
 }
 
 h2 {
     color: #007BFF;
 }
 
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
 
-@media (max-width: 600px) {
-    header {
-        font-size: 1.2em;
+
+
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 16px; /* Điều chỉnh kích cỡ chữ cho điện thoại */
     }
-    
-    button {
+
+    .header {
+        background-color: #3498db; /* Giữ nguyên màu nền */
+        width: 100%; /* Đảm bảo phần header chiếm đủ chiều rộng màn hình */
+    }
+
+    .content {
+        padding: 10px; /* Điều chỉnh khoảng cách lề cho phù hợp */
         width: 100%;
     }
 }
