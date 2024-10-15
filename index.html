@@ -1,11 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tour Vũng Tàu</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <header>
+        <h1>Chuyến Đi Tour tới Vũng Tàu</h1>
+    </header>
+    <main>
+        <section class="plan">
+            <h2>Kế Hoạch Chuyến Đi</h2>
+            <ul>
+                <li>Ngày 1: Khởi hành từ TP.HCM</li>
+                <li>Ngày 1: Tham quan bãi biển Vọng Nguyệt</li>
+                <li>Ngày 2: Tham quan ngọn hải đăng Vũng Tàu</li>
+                <li>Ngày 2: Tắm biển và ăn hải sản tại bãi Sau</li>
+                <li>Ngày 3: Khởi hành về TP.HCM</li>
+            </ul>
+        </section>
+        
+        <section class="registration">
+            <h2>Đăng Ký Tham Gia</h2>
+            <form id="registrationForm" action="https://docs.google.com/forms/d/e/YOUR_GOOGLE_FORM_ID/formResponse" method="POST" target="_self">
+                <label for="name">Họ và Tên:</label>
+                <input type="text" id="name" name="entry.YOUR_NAME_FIELD_ID" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="entry.YOUR_EMAIL_FIELD_ID" required>
+
+                <label for="phone">Số Điện Thoại:</label>
+                <input type="text" id="phone" name="entry.YOUR_PHONE_FIELD_ID" required>
+
+                <button type="submit">Gửi Đăng Ký</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Tour Vũng Tàu</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
